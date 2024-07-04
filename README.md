@@ -6,7 +6,6 @@
 
 ### Polyfill features
 
-- Arrow functions (`() => {}`)
 - Optional Chain (`a?.b`)
 - [QueueMicrotask](https://developer.mozilla.org/en-US/docs/Web/API/queueMicrotask) (`queueMicrotask(() => {/* ... */})`)
 
