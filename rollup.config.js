@@ -17,13 +17,12 @@ const config = {
         nodeResolve(),
         babel({
             babelHelpers: "runtime",
-            // exclude: 'node_modules/**',
             "presets": [
                 [
                     "@babel/preset-env",
                     {
                         "loose": true,
-                        targets: {
+                        "targets": {
                             "browsers": ["since 2018"]
                         }
                     }
