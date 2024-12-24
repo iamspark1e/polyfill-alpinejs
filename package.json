@@ -1,11 +1,12 @@
 {
   "name": "polyfill-alpinejs",
-  "version": "3.14.1-alpha.0",
+  "version": "3.14.8",
   "description": "Alpinejs v3 with polyfill for legacy (>= year 2018) browsers",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js"
+    "build": "rollup -c ./rollup.config.js",
+    "postpack": ""
   },
   "keywords": [
     "alpinejs",
@@ -17,17 +18,17 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.24.7",
-    "alpinejs": "=3.14.1"
+    "@babel/runtime": "^7.26.0",
+    "alpinejs": "^3.14.8"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@types/alpinejs": "^3.13.10",
-    "rollup": "^4.18.0"
+    "@types/alpinejs": "^3.13.11",
+    "rollup": "^4.29.1"
   }
 }

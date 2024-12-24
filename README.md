@@ -2,7 +2,7 @@
 
 ### Version
 
-[v3.14.1](https://github.com/alpinejs/alpine/releases/tag/v3.14.1)
+[v3.14.8](https://github.com/alpinejs/alpine/releases/tag/v3.14.8)
 
 ### Polyfill features
 
