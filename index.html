@@ -1,0 +1,33 @@
+<html lang="en" data-theme="emerald">
+
+<head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./dist/alpine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <style></style>
+</head>
+
+<body x-data="indexData">
+    Test Page
+    <span x-foo x-bind:foo="foo" x-text="foo"></span>
+</body>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.directive('foo', (el, { value, modifiers, expression }) => {
+            Alpine.addScopeToNode(el, { foo: 'bar' })
+        }).before('bind')
+        Alpine.data('indexData', () => {
+            return {
+
+                init() {
+
+                }
+            }
+        })
+    })
+</script>
+
+</html>
